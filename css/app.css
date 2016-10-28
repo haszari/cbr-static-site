@@ -2,11 +2,9 @@ body {
   background-color: #343232;
 }
 
-.cbrMixerLogo-row {
+.cbrMixerLogo-padding {
   height: 100%;
-}
-
-.cbrMixerLogo-cell {
+  width: 100%;
   padding: 20px;
 }
 
