@@ -1,0 +1,20 @@
+body {
+  background-color: #343232;
+}
+
+.cbrMixerLogo-row {
+  height: 100%;
+}
+
+.cbrMixerLogo-cell {
+  padding: 20px;
+}
+
+.cbrMixerLogo-image {
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/CBR-logo-20151017-slantymixer-colour.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
