@@ -103,6 +103,11 @@ body {
   background-color: #5e2204;
 }
 
+.footer {
+  padding-bottom: 2em;
+  background-color: #141212;
+}
+
 @media screen and (max-width: 39.9375em) {
   body {
     font-size: 8px;
