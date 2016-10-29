@@ -40,6 +40,14 @@ body {
   text-align: right;
 }
 
+.release-rightText .column-info {
+  order: 99;
+}
+
+.release-rightText .column-coverart {
+  text-align: right;
+}
+
 .release-title {
   font-size: 140%;
   font-weight: bold;
