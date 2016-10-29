@@ -1,9 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic|Roboto:400,400italic,700italic,700);
+
 body {
-  background-color: #343232;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px
 }
 
+@import url('fadein.css');
+
 .cbrMixerLogo-padding {
-  height: 100%;
+  background-color: #343232;
+
+  height: 40%;
   width: 100%;
   padding: 20px;
 }
@@ -15,39 +23,29 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-      -moz-animation: fadein 2s; /* Firefox < 16 */
-      -ms-animation: fadein 2s; /* Internet Explorer */
-        -o-animation: fadein 2s; /* Opera < 12.1 */
-          animation: fadein 2s;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.release {
+  height: 55%;
+  width: 100%;
+
+  padding: 20px 40px;
 }
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.release-leftText .column-info {
+  text-align: right;
 }
 
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.release-title {
+  font-size: 140%;
+  font-weight: bold;
 }
 
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.release-artists {
+  font-size: 120%;
 }
 
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.release-coverart {
+  height: 100%;
 }
+
