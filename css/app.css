@@ -32,6 +32,10 @@ body {
   padding: 2em;
 }
 
+.column-info {
+  padding: 0;
+}
+
 .release-leftText .column-info {
   text-align: right;
 }
@@ -47,6 +51,26 @@ body {
 
 .release-coverart {
   max-height: 100%;
+}
+
+.release.release-cbr004 {
+  background-color: #a50011;
+  color: white;
+}
+
+.release.release-cbr003 {
+  background-color: #051966;
+  color: white;
+}
+
+.release.release-cbr002 {
+  background-color: #f00001;
+  color: white;
+}
+
+.release.release-cbr001 {
+  background-color: #5e2204;
+  color: white;
 }
 
 @media screen and (max-width: 39.9375em) {
