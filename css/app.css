@@ -81,19 +81,38 @@ body {
   font-size: 120%;
 }
 
-.release-cbr004:before {
-  background-color: #a50011;
+.release-cbr004a:before {
+  background-color: #e3001c;
 }
 
-.release-cbr003:before {
+.release-cbr004b:before {
+  background-color: #89000d;
+}
+
+.release-cbr003a:before {
   background-color: #051966;
 }
 
-.release-cbr002:before {
+/*.release-cbr003b {
+  color: black;
+}*/
+.release-cbr003b:before {
+  background-color: #f75c21;
+}
+
+.release-cbr002a:before {
+  background-color: #5a6a6c;
+}
+
+.release-cbr002b:before {
   background-color: #f00001;
 }
 
-.release-cbr001:before {
+.release-cbr001a:before {
+  background-color: #88568b;
+}
+
+.release-cbr001b:before {
   background-color: #5e2204;
 }
 
