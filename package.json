@@ -1,0 +1,35 @@
+{
+  "name": "cbr-react-site",
+  "version": "0.0.1",
+  "description": "React-powered static site for Cartoon Beats.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haszari/cbr-static-site.git"
+  },
+  "author": "haszari@cartoonbeats.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haszari/cbr-static-site/issues"
+  },
+  "homepage": "https://github.com/haszari/cbr-static-site#readme",
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.26.0",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.9"
+  }
+}
