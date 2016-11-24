@@ -4,6 +4,7 @@
   "description": "React-powered static site for Cartoon Beats.",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --port 3434",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
