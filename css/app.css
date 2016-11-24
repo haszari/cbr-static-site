@@ -48,9 +48,14 @@ body {
   left: 0;
   right: 0;
   top: 0;
-  bottom: -25px;
+  bottom: -100px; /* big overhang so don't see gap on wide monitor */
   z-index: -1;
 }
+/* last one has less overhang as it butts up to flat footer */
+.release:last-child:before {
+  bottom: -25px;
+}
+/* alternate angle for askew effect */
 .release-leftText:before {
   background-color: #141212;
   transform: skewY(-1.5deg);
