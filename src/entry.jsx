@@ -1,18 +1,21 @@
 import './css/foundation.css';
 import './css/app.css';
 
-// document.write("It works SWEET.")
+import React from 'react';
+import {render} from 'react-dom';
 
-// import React from 'react';
-// import {render} from 'react-dom';
+class HelloCbr extends React.Component {
+   render () {
+      return (
+         <div className="row">
+            <div className="small-12 columns column-info">
+               <div>
+               CBR REACT M8!
+               </div>
+            </div>
+         </div>
+      );
+  }
+}
 
-// class App extends React.Component {
-//   render () {
-//     return <p> Hello React!</p>;
-//   }
-// }
-
-// var appDiv = document.createElement('div');
-// document.body.appendChild(appDiv);
-
-// render(<App/>, appDiv);
+render(<HelloCbr/>, document.getElementById('helloCbr'));
