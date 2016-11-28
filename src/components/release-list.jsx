@@ -10,6 +10,17 @@ class ReleaseItem extends React.Component {
       return classes.join(' ');
    }
 
+   slantStyle() {
+      let styles = {};
+      if (this.props.colours) {
+         if (this.props.colours.background) {
+            styles.backgroundColor = this.props.colours.background;
+         }
+      }
+
+      return styles;
+   }
+
    renderRemixers() {
       let remixersString = "";
       let remixers = this.props.remixers;
@@ -31,6 +42,7 @@ class ReleaseItem extends React.Component {
    render () {
       return (
          <div className={this.rowClasses()}>
+            <div className="slant" style={this.slantStyle()} />
             <div className="small-5 columns column-info">
                <div className="release-title">
                {this.props.title}

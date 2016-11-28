@@ -10,13 +10,19 @@ export default [
       remixers: [
       	"SoNic Smith",
       	"nsu"
-      ]
+      ],
+      colours: {
+      	background: "#e3001c",
+      },
    },
    {
       catalogueNumber: "cbr004b",
       title: "Re: Memory",
       artist: "SoNic Smith",
       image: cbr004bImage,
+      colours: {
+      	background: "#89000d",
+      },
       remixers: [
       	"Haszari",
       	"nsu"
