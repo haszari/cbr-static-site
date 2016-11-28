@@ -94,45 +94,41 @@ export default [
    },
 
    {
-      catalogueNumber: "cbr003a",
-      title: "It's Not Real",
-      artist: "Haszari",
-      image: cbr003aImage,
+      catalogueNumber: "cbr002a",
+      title: "Wii Break",
+      artist: "SoNic Smith",
+      image: cbr002aImage,
       remixers: [
-      	"nsu",
-      	"Aural Trash", 
-      	"Snake Charmer",
-      	"Greg Churchill"
+      	"Sharkweek",
+      	"Haszari"
       ],
       colours: {
-      	background: "#051966",
+      	background: "#5a6a6c",
       },
       listenLinks: {
-      	spotify: '',
-      	appleMusic: '',
-      	googlePlay: '',
-      	amazon: ''
+      	spotify: 'https://open.spotify.com/album/5bxqxWez7DIdd1veKzD4Gs',
+      	appleMusic: 'https://itunes.apple.com/us/album/wii-break-single/id1175722432?uo=4&app=music',
+      	googlePlay: 'https://play.google.com/store/music/album/SoNic_Smith_Wii_Break?id=B7ihu273t2bcehay5ery55m2ery',
+      	amazon: 'http://www.amazon.com/gp/product/B01MQHLRIJ'
       }
    },
    {
-      catalogueNumber: "cbr003b",
-      title: "Neutron Star MMX",
-      artist: "nsu",
-      image: cbr003bImage,
+      catalogueNumber: "cbr002b",
+      title: "Small Firm Peppermints",
+      artist: "Sharkweek",
+      image: cbr002bImage,
       remixers: [
-      	"Haszari",
-      	"Aural Trash", 
-      	"Snake Charmer",
-      	"Greg Churchill"
+      	"SoNic Smith",
+      	"Haszari"
       ],
       colours: {
-      	background: "#f75c21",
+      	background: "#f00001",
       },
       listenLinks: {
-      	spotify: '',
-      	appleMusic: '',
-      	googlePlay: '',
-      	amazon: ''
+      	spotify: 'https://open.spotify.com/album/6qelxqzkMKEE15USaPdKel',
+      	appleMusic: 'https://itunes.apple.com/us/album/small-firm-peppermints-single/id1175777746?uo=4&app=music',
+      	googlePlay: 'https://play.google.com/store/music/album/Sharkweek_Small_Firm_Peppermints?id=Bewjsvqgm5kfvigglgwunbynxim',
+      	amazon: 'http://www.amazon.com/gp/product/B01MYLH0I4'
       }
    },
 
