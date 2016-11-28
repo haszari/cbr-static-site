@@ -43,7 +43,7 @@ class ReleaseItem extends React.Component {
                </div>
             </div>
             <div className="small-7 columns column-coverart">
-               <img className="release-coverart" src="img/releases/CBR004A-front.jpg">
+               <img className="release-coverart" src={this.props.image}>
                </img>
             </div>
          </div>
