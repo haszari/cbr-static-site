@@ -1,5 +1,19 @@
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic|Roboto:400,400italic,700italic,700);
 
+@import "./fadein.css";
+
+
+$foundation-palette: (
+  primary: #FFFFFF,
+  alert: #ec5840,
+);
+
+@import "~foundation-sites/scss/foundation";
+
+// import foundation with flex grid (our css assumes this!)
+@include foundation-everything(true);
+
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -7,8 +21,6 @@ body {
   color: white;
   background-color: #343232;
 }
-
-@import url('fadein.css');
 
 .cbrMixerLogo-padding {
   height: 40%;
@@ -84,6 +96,22 @@ body {
 
 .release-artists {
   font-size: 120%;
+}
+
+.release-listenLinks {
+  font-size: 120%;
+  line-height: 200%;
+}
+.release-leftText .release-listenLinks a {
+  margin-left: 6px;
+}
+.release-rightText .release-listenLinks a {
+  margin-right: 6px;
+}
+
+.release-listenLinks .icon-amazon {
+  position: relative;
+  top: 2px;
 }
 
 .release-cbr004a:before {

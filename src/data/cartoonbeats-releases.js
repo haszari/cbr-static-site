@@ -26,12 +26,18 @@ export default [
       title: "Re: Memory",
       artist: "SoNic Smith",
       image: cbr004bImage,
-      colours: {
-      	background: "#89000d",
-      },
       remixers: [
       	"Haszari",
       	"nsu"
-      ]
+      ],
+      colours: {
+      	background: "#89000d",
+      },
+      listenLinks: {
+      	spotify: 'https://open.spotify.com/album/1sK6Pni3PhF6iTjxzC9WMK',
+      	appleMusic: 'https://itunes.apple.com/us/album/re-memory-single/id1175897729?uo=4&app=music',
+      	googlePlay: 'https://play.google.com/store/music/album/SoNic_Smith_RE_Memory?id=Bczniwskxl4if6pmbml22ge6fsa',
+      	amazon: 'http://www.amazon.com/gp/product/B01N04D2Z0'
+      }
    }
 ];

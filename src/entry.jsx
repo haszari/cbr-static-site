@@ -1,5 +1,4 @@
-import './css/foundation.css';
-import './css/app.css';
+import './css/app.scss';
 
 import ReleaseList from './components/release-list.jsx';
 
