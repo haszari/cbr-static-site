@@ -39,6 +39,27 @@ class ReleaseItem extends React.Component {
       return remixersString;
    }
 
+   renderListenList() {
+      if (!this.props.listenLinks) 
+         return '';
+      let listenLinks = this.props.listenLinks;
+      let amazon = listenLinks.amazon ? 
+         (<a key="amazon" href={listenLinks.amazon}><span className="icon-amazon"></span></a>) : '';
+      let appleMusic = listenLinks.appleMusic ? 
+         (<a key="appleMusic" href={listenLinks.appleMusic}><span className="icon-apple"></span></a>) : '';
+      let googlePlay = listenLinks.googlePlay ? 
+         (<a key="googlePlay" href={listenLinks.googlePlay}><span className="icon-google"></span></a>) : '';
+      let spotify = listenLinks.spotify ? 
+         (<a key="spotify" href={listenLinks.spotify}><span className="icon-spotify"></span></a>) : '';
+
+      return [
+         spotify,
+         appleMusic,
+         googlePlay,
+         amazon
+      ];
+   }
+
    render () {
       return (
          <div className={this.rowClasses()}>
@@ -52,6 +73,9 @@ class ReleaseItem extends React.Component {
                </div>
                <div className="release-remixers">
                   {this.renderRemixers()}
+               </div>
+               <div className="release-listenLinks">
+                  {this.renderListenList()}
                </div>
             </div>
             <div className="small-7 columns column-coverart">

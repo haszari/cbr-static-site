@@ -14,6 +14,12 @@ export default [
       colours: {
       	background: "#e3001c",
       },
+      listenLinks: {
+      	spotify: 'https://open.spotify.com/album/2Jfysi3ktit9ZIdyFDuY7d',
+      	appleMusic: 'https://itunes.apple.com/us/album/blood-orange-ep/id1175893872?uo=4&app=music',
+      	googlePlay: 'https://play.google.com/store/music/album/Haszari_Blood_Orange?id=Bjeswdu6uiqdbz6mhiq5p6wtj2i',
+      	amazon: 'http://www.amazon.com/gp/product/B01MYLP58L'
+      }
    },
    {
       catalogueNumber: "cbr004b",

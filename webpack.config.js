@@ -1,5 +1,6 @@
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
    entry: "./src/entry.jsx",
@@ -37,7 +38,12 @@ module.exports = {
       ]
    },
    // this helps generate an html file for our generated bundle filename
-   plugins: [new HtmlWebpackPlugin({
-      template: 'src/index.html'      
-   })]
+   plugins: [
+      new HtmlWebpackPlugin({
+         template: 'src/index.html'      
+      }),
+      new CopyWebpackPlugin([
+         { from: 'src/css/fontello', to: 'css/fontello' },
+      ]) 
+   ]
 };
