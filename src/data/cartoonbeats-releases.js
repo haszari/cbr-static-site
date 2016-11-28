@@ -133,45 +133,41 @@ export default [
    },
 
    {
-      catalogueNumber: "cbr003a",
-      title: "It's Not Real",
-      artist: "Haszari",
-      image: cbr003aImage,
+      catalogueNumber: "cbr001a",
+      title: "Ladies Style",
+      artist: "SoNic Smith",
+      image: cbr001aImage,
       remixers: [
-      	"nsu",
-      	"Aural Trash", 
-      	"Snake Charmer",
-      	"Greg Churchill"
+      	"Haszari",
+      	"Stray Theories"
       ],
       colours: {
-      	background: "#051966",
+      	background: "#88568b",
       },
       listenLinks: {
-      	spotify: '',
-      	appleMusic: '',
-      	googlePlay: '',
-      	amazon: ''
+      	spotify: 'https://open.spotify.com/album/6MAwIp8gXcCYGc8tfDXFzH',
+      	appleMusic: '', // not there yet!! WHAT!
+      	googlePlay: 'https://play.google.com/store/music/album/SoNic_Smith_Ladies_Style?id=Bzuwhfurnv7b2bwxm2rzkmroazq',
+      	amazon: 'http://www.amazon.com/gp/product/B01MTM2XGC'
       }
    },
    {
-      catalogueNumber: "cbr003b",
-      title: "Neutron Star MMX",
-      artist: "nsu",
-      image: cbr003bImage,
+      catalogueNumber: "cbr001b",
+      title: "The Jacket",
+      artist: "Haszari",
+      image: cbr001bImage,
       remixers: [
-      	"Haszari",
-      	"Aural Trash", 
-      	"Snake Charmer",
-      	"Greg Churchill"
+      	"SoNic Smith",
+      	"Stray Theories"
       ],
       colours: {
-      	background: "#f75c21",
+      	background: "#5e2204",
       },
       listenLinks: {
-      	spotify: '',
-      	appleMusic: '',
-      	googlePlay: '',
-      	amazon: ''
+      	spotify: 'https://open.spotify.com/album/62C7AEVpYoDBvW815KwQRp',
+      	appleMusic: 'https://itunes.apple.com/us/album/the-jacket-ep/id1175874775?uo=4&app=music',
+      	googlePlay: 'https://play.google.com/store/music/album/Haszari_The_Jacket?id=Bnyfr4dkhlf75bauw6olebfrmca',
+      	amazon: 'http://www.amazon.com/gp/product/B01N3N9AOS'
       }
    },
 ];

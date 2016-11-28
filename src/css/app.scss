@@ -53,30 +53,6 @@ body {
   padding: 0;
 }
 
-/* angled background/border for each release */
-.release:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: -100px; /* big overhang so don't see gap on wide monitor */
-  z-index: -1;
-}
-/* last one has less overhang as it butts up to flat footer */
-.release:last-child:before {
-  bottom: -25px;
-}
-/* alternate angle for askew effect */
-.release-leftText:before {
-  background-color: #141212;
-  transform: skewY(-1.5deg);
-}
-.release-rightText:before {
-  background-color: #343232;
-  transform: skewY(+1.5deg);
-}
-
 .release-leftText .column-info {
   text-align: right;
 }
@@ -112,41 +88,6 @@ body {
 .release-listenLinks .icon-amazon {
   position: relative;
   top: 2px;
-}
-
-.release-cbr004a:before {
-  background-color: #e3001c;
-}
-
-.release-cbr004b:before {
-  background-color: #89000d;
-}
-
-.release-cbr003a:before {
-  background-color: #051966;
-}
-
-/*.release-cbr003b {
-  color: black;
-}*/
-.release-cbr003b:before {
-  background-color: #f75c21;
-}
-
-.release-cbr002a:before {
-  background-color: #5a6a6c;
-}
-
-.release-cbr002b:before {
-  background-color: #f00001;
-}
-
-.release-cbr001a:before {
-  background-color: #88568b;
-}
-
-.release-cbr001b:before {
-  background-color: #5e2204;
 }
 
 .footer {

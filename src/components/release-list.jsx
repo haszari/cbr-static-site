@@ -11,7 +11,25 @@ class ReleaseItem extends React.Component {
    }
 
    slantStyle() {
-      let styles = {};
+      let styles = {
+         position: 'absolute',
+         left: 0,
+         right: 0,
+         top: 0,
+         // big overhang so don't see gap on wide monitor
+         bottom: '-100px', 
+         zIndex: -1,
+         backgroundColor: '#343232',
+         transform: 'skewY(+1.5deg)'
+      };
+      if (this.props.leftText) {
+         styles.backgroundColor = '#141212';
+         styles.transform = 'skewY(-1.5deg)';
+      }
+      // last one has less overhang as it butts up to flat footer 
+      if (this.props.lastItem) 
+         styles.bottom = '-25px';
+
       if (this.props.colours) {
          if (this.props.colours.background) {
             styles.backgroundColor = this.props.colours.background;
@@ -89,8 +107,9 @@ class ReleaseItem extends React.Component {
 
 export default class ReleaseList extends React.Component {
    render () {
+      const lastIndex = cbrReleaseInfo.length-1;
       const releaseList = cbrReleaseInfo.map((release, i) =>
-         <ReleaseItem {... release} leftText={(i % 2) == 0} key={release.catalogueNumber} />
+         <ReleaseItem {... release} leftText={(i % 2) == 0} lastItem={i==lastIndex} key={release.catalogueNumber} />
       );
       return <div>{releaseList}</div>;
   }
