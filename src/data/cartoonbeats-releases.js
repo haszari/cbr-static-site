@@ -1,3 +1,6 @@
+import cbr005aImage from '../img/releases/CBR005A-front.jpg';
+import cbr005bImage from '../img/releases/CBR005B-front.jpg';
+
 import cbr004aImage from '../img/releases/CBR004A-front.jpg';
 import cbr004bImage from '../img/releases/CBR004B-front.jpg';
 
@@ -11,6 +14,46 @@ import cbr001aImage from '../img/releases/CBR001A-front.jpg';
 import cbr001bImage from '../img/releases/CBR001B-front.jpg';
 
 export default [
+   {
+      catalogueNumber: "cbr005a",
+      title: "Fuzzy Motion",
+      artist: "Nikolozi",
+      image: cbr005aImage,
+      remixers: [
+         "Haszari",
+         "nsu"
+      ],
+      colours: {
+         background: "#33002e",
+      },
+      listenLinks: {
+         // spotify: 'https://open.spotify.com/album/2Jfysi3ktit9ZIdyFDuY7d',
+         // appleMusic: 'https://itunes.apple.com/us/album/blood-orange-ep/id1175893872?uo=4&app=music',
+         // googlePlay: 'https://play.google.com/store/music/album/Haszari_Blood_Orange?id=Bjeswdu6uiqdbz6mhiq5p6wtj2i',
+         // amazon: 'http://www.amazon.com/gp/product/B01MYLP58L'
+      }
+   },
+
+   {
+      catalogueNumber: "cbr005b",
+      title: "Padded Cell",
+      artist: "Haszari",
+      image: cbr005bImage,
+      remixers: [
+         "Nikolozi",
+         "nsu"
+      ],
+      colours: {
+         background: "#c61647",
+      },
+      listenLinks: {
+         // spotify: 'https://open.spotify.com/album/2Jfysi3ktit9ZIdyFDuY7d',
+         // appleMusic: 'https://itunes.apple.com/us/album/blood-orange-ep/id1175893872?uo=4&app=music',
+         // googlePlay: 'https://play.google.com/store/music/album/Haszari_Blood_Orange?id=Bjeswdu6uiqdbz6mhiq5p6wtj2i',
+         // amazon: 'http://www.amazon.com/gp/product/B01MYLP58L'
+      }
+   },
+
    {
       catalogueNumber: "cbr004a",
       title: "Blood Orange",
