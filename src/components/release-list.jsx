@@ -58,18 +58,37 @@ class ReleaseItem extends React.Component {
    }
 
    renderListenList() {
-      if (!this.props.listenLinks) 
-         return '';
       let listenLinks = this.props.listenLinks;
-      let amazon = listenLinks.amazon ? 
-         (<a key="amazon" href={listenLinks.amazon}><span className="icon-amazon"></span></a>) : '';
-      let appleMusic = listenLinks.appleMusic ? 
-         (<a key="appleMusic" href={listenLinks.appleMusic}><span className="icon-apple"></span></a>) : '';
-      let googlePlay = listenLinks.googlePlay ? 
-         (<a key="googlePlay" href={listenLinks.googlePlay}><span className="icon-google"></span></a>) : '';
-      let spotify = listenLinks.spotify ? 
-         (<a key="spotify" href={listenLinks.spotify}><span className="icon-spotify"></span></a>) : '';
+      let listenElements = [];
 
+      if (listenLinks.spotify)
+         listenElements.push( 
+            (<a key="spotify" href={listenLinks.spotify}><span className="icon-spotify"></span></a>)
+         );
+      if (listenLinks.appleMusic)
+         listenElements.push( 
+            (<a key="appleMusic" href={listenLinks.appleMusic}><span className="icon-apple"></span></a>)
+         );
+      if (listenLinks.googlePlay)
+         listenElements.push( 
+            (<a key="googlePlay" href={listenLinks.googlePlay}><span className="icon-google"></span></a>)
+         );
+      if (listenLinks.amazon)
+         listenElements.push( 
+            (<a key="amazon" href={listenLinks.amazon}><span className="icon-amazon"></span></a>)
+         );
+
+      // let appleMusic = listenLinks.appleMusic ? 
+      //    (<a key="appleMusic" href={listenLinks.appleMusic}><span className="icon-apple"></span></a>) : undefined;
+      // let googlePlay = listenLinks.googlePlay ? 
+      //    (<a key="googlePlay" href={listenLinks.googlePlay}><span className="icon-google"></span></a>) : undefined;
+      // let spotify = listenLinks.spotify ? 
+      //    (<a key="spotify" href={listenLinks.spotify}><span className="icon-spotify"></span></a>) : undefined;
+
+      if (listenElements.length < 1) 
+         listenElements.push(('out soon'));
+
+      return listenElements;
       return [
          spotify,
          appleMusic,
