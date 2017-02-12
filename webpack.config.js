@@ -1,12 +1,21 @@
 
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
+
+const paths = [
+   '/'
+];
 
 module.exports = {
-   entry: "./src/entry.jsx",
+   entry: {
+      main: "./src/entry.jsx",
+   },
    output: {
       path: __dirname + "/dist/",
-      filename: "bundle.js"
+      filename: "bundle.js",
+      libraryTarget: 'umd' // needed for StaticSiteGeneratorPlugin to work correctly
    },
    devtool: 'source-map',
    module: {
@@ -19,9 +28,12 @@ module.exports = {
                presets: ['es2015', 'react']
             },
          },
-         { 
-            test: /\.css$/, 
-            loader: "style!css" 
+         {
+            test: /\.css/,
+            loader: ExtractTextPlugin.extract(
+               'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss'
+            ),
+            include: __dirname + '/src'
          },
          {
             test: /\.scss$/,
@@ -39,11 +51,18 @@ module.exports = {
    },
    // this helps generate an html file for our generated bundle filename
    plugins: [
-      new HtmlWebpackPlugin({
-         template: 'src/index.html'      
+      // new HtmlWebpackPlugin({
+      //    template: 'src/index.html'      
+      // }),
+      new StaticSiteGeneratorPlugin('main', paths, {
+         // Properties here are merged into `locals`
+         // passed to the exported render function
+         greet: 'Hello'
       }),
       new CopyWebpackPlugin([
          { from: 'src/css/fontello', to: 'css/fontello' },
-      ]) 
+      ]),
+      new ExtractTextPlugin("styles.css"),
+      // `main` is the bundle name sepcified in the `entry` section above.
    ]
 };
