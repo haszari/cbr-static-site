@@ -37,7 +37,8 @@ module.exports = {
          },
          {
             test: /\.scss$/,
-            loader: 'style!css!sass'
+            loader: 
+               ExtractTextPlugin.extract('css?sourceMap!sass?sourceMap')
          },
          {
             test: /\.html$/,
@@ -51,18 +52,18 @@ module.exports = {
    },
    // this helps generate an html file for our generated bundle filename
    plugins: [
-      // new HtmlWebpackPlugin({
-      //    template: 'src/index.html'      
-      // }),
+      new ExtractTextPlugin("styles.css"),
+      // `main` is the bundle name sepcified in the `entry` section above.
       new StaticSiteGeneratorPlugin('main', paths, {
          // Properties here are merged into `locals`
          // passed to the exported render function
          greet: 'Hello'
       }),
+      // new HtmlWebpackPlugin({
+      //    template: 'src/index.html'      
+      // }),
       new CopyWebpackPlugin([
          { from: 'src/css/fontello', to: 'css/fontello' },
       ]),
-      new ExtractTextPlugin("styles.css"),
-      // `main` is the bundle name sepcified in the `entry` section above.
    ]
 };
