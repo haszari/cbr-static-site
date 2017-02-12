@@ -59,9 +59,6 @@ module.exports = {
          // passed to the exported render function
          greet: 'Hello'
       }),
-      // new HtmlWebpackPlugin({
-      //    template: 'src/index.html'      
-      // }),
       new CopyWebpackPlugin([
          { from: 'src/css/fontello', to: 'css/fontello' },
       ]),
