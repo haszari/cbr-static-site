@@ -27,10 +27,10 @@ export default [
          background: "#33002e",
       },
       listenLinks: {
-         // spotify: 'https://open.spotify.com/album/2Jfysi3ktit9ZIdyFDuY7d',
-         // appleMusic: 'https://itunes.apple.com/us/album/blood-orange-ep/id1175893872?uo=4&app=music',
-         // googlePlay: 'https://play.google.com/store/music/album/Haszari_Blood_Orange?id=Bjeswdu6uiqdbz6mhiq5p6wtj2i',
-         // amazon: 'http://www.amazon.com/gp/product/B01MYLP58L'
+         spotify: 'https://open.spotify.com/album/6fysfToZ3QcK3NF4WPiUYE',
+         appleMusic: 'https://geo.itunes.apple.com/us/album/fuzzy-motion-single/id1200706497?mt=1&app=music',
+         googlePlay: 'https://play.google.com/music/m/Bbfw7wqqvihttjhx7dlcb5v3nzq?t=Fuzzy_Motion_-_Nikolozi',
+         amazon: 'https://www.amazon.com/Fuzzy-Motion-Nikolozi/dp/B01N16H5TX'
       }
    },
 
