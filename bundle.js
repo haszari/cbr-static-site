@@ -4458,10 +4458,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      background: "#c61647"
 	   },
 	   listenLinks: {
-	      // spotify: 'https://open.spotify.com/album/2Jfysi3ktit9ZIdyFDuY7d',
-	      // appleMusic: 'https://itunes.apple.com/us/album/blood-orange-ep/id1175893872?uo=4&app=music',
-	      // googlePlay: 'https://play.google.com/store/music/album/Haszari_Blood_Orange?id=Bjeswdu6uiqdbz6mhiq5p6wtj2i',
-	      // amazon: 'http://www.amazon.com/gp/product/B01MYLP58L'
+	      spotify: 'https://open.spotify.com/album/3nZK807I6PZI3DVymT35vl',
+	      appleMusic: 'https://itunes.apple.com/us/album/padded-cell-single/id1200706796?uo=4&app=music&at=1001lry3',
+	      googlePlay: 'https://play.google.com/store/music/album/Haszari_Padded_Cell?id=Bbvjyhs2lmgwfmqktqlvpkajc2q',
+	      amazon: 'http://www.amazon.com/gp/product/B01NAYTDLW'
 	   }
 	}, {
 	   catalogueNumber: "cbr004a",
