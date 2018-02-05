@@ -18,8 +18,14 @@ const pagePreamble = '<!doctype html>\
     <title>Cartoon Beats Reality</title>\
   </head>\
   <body>\
-    <div class="cbrMixerLogo-padding">\
-      <div class="cbrMixerLogo-image fadeIn"></div>\
+    <div class="stripe menu">\
+      <div class="stripe-column">\
+        <div class="primary">\
+          <a href="http://cartoonbeats.com" title="Music" class="menuIcon releases"> </a>\
+          <a href="http://haszari.cartoonbeats.com" title="Blog" class="menuIcon blog"> </a>\
+          <a href="http://haszari.cartoonbeats.com/tags" title="Tags" class="menuIcon tags"> </a>\
+        </div>\
+      </div>\
     </div>';
 
 const pageEndle = '</section>\
