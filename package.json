@@ -28,7 +28,7 @@
     "css-loader": "^0.26.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
-    "foundation-sites": "^6.2.4",
+    "foundation-sites": "=6.2.4",
     "history": "^4.5.1",
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.22.0",
