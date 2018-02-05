@@ -3266,6 +3266,90 @@ table.hover tbody tr:nth-of-type(even):hover {
   .large-order-6 {
     order: 6; } }
 
+.menu.stripe, .menu a {
+  background-color: #201C22;
+  color: white; }
+
+.stripe {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.menu {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: italic; }
+
+.stripe {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.stripe-column {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.stripe-column > * {
+  margin-left: 6px;
+  margin-right: 6px; }
+
+.pull-right {
+  float: right; }
+
+.menu {
+  border-bottom: 2px solid #BEBCAA; }
+
+/* no underline for menu links */
+.menu a {
+  text-decoration: none;
+  height: 44px;
+  width: 44px;
+  margin-top: 12px;
+  background-image: url(1ee2a211874d3a09e3d31ed159da8536.svg);
+  background-size: 1200%;
+  /* there are 12 slots in my sprite */ }
+
+.menu a.menuIcon.hidden {
+  background-image: none; }
+
+@media (max-width: 800px) {
+  .menu a {
+    height: 30px;
+    width: 30px; } }
+
+/* menu things are not full width */
+.menu .stripe-column * {
+  display: inline-block; }
+
+.menu .primary a {
+  margin-right: 40px; }
+
+.menu .secondary a {
+  margin-left: 40px; }
+
+/* secondary on right */
+.menu .secondary {
+  float: right; }
+
+.menuIcon.blog {
+  background-position-x: 600%; }
+
+.menuIcon.tags {
+  background-position-x: -200%; }
+
+.menuIcon.releases {
+  background-position-x: -400%; }
+
+.menuIcon.compose {
+  background-position-x: -800%; }
+
+.menuIcon.login, .menuIcon.logout {
+  background-position-x: -600%; }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
